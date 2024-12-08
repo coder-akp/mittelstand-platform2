@@ -1,0 +1,25 @@
+{
+  "name": "mittelstand-platform",
+  "version": "1.0.0",
+  "description": "A platform for German Mittelstand companies to adopt digital tools, improve cybersecurity, and address succession planning.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start --workspace frontend",
+    "dev": "npm run dev --workspace frontend",
+    "start-backend": "npm run start --workspace backend",
+    "dev-backend": "npm run dev --workspace backend"
+  },
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend",
+    "packages/shared"
+  ],
+  "dependencies": {
+    "react": "^18.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "prettier": "^2.5.1"
+  }
+}
